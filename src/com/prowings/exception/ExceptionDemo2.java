@@ -12,11 +12,15 @@ public class ExceptionDemo2 {
 		
 		try
 		{
-			res = nums[2]/denom;
+			res = nums[4]/denom;
 		}
 		catch(IndexOutOfBoundsException e)
 		{
 			System.out.println(">>>>> IndexOutOfBoundsException occurred!!");
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println(">>>>> ArithmeticException occurred!!");
 		}
 		
 		System.out.println("Result is : "+res);
