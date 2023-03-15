@@ -11,7 +11,7 @@ public class MultiCatchDemo {
 		try {
 			res = nums[5] / 0;
 		}
-		catch (Exception e) {
+		catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
 			System.out.println("Exception occurred!!");
 			System.out.println(e.getMessage());
 		}
