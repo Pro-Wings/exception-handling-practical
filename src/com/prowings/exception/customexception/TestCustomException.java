@@ -34,7 +34,8 @@ public class TestCustomException {
 		}
 		catch (Exception e) {
 //			throw new InvalidAgeException("Age is below 18!!!");
-			throw new InvalidAgeException("Age is below 18!!!", e);
+//			throw e; // this is exception rethrowing - as we are throwing exception object as it is.
+			throw new InvalidAgeException("Age is below 18!!!", e); //this is exception wrapping - as we are throwing exception object converting to other exception
 		}
 		return false;
 		
